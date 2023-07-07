@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Create T3 App</title>
+        <title>XCL</title>
         <meta name="description" content="XCL's homepage" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
