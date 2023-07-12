@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { api } from "~/utils/api";
+import { Logo } from "./components/Logo";
 
 export default function Home() {
   return (
@@ -17,9 +18,7 @@ export default function Home() {
         <div className="bg-black/60">
           <div className="flex min-h-screen flex-col items-center justify-center bg-orange-800/40">
             <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16">
-              <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-                <Image src="/xcl.png" alt="XCL" width={209} height={105} />
-              </h1>
+              <Logo />
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-1 md:gap-8">
                 <Link
                   className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white shadow-lg backdrop-blur-sm transition-all hover:bg-white/20 hover:shadow-2xl hover:backdrop-blur"
