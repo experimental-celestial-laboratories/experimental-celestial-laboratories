@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <Head>
         <title>XCL</title>
-        <meta name="description" content="XCL homepage" />
+        <meta name="description" content="XCL's mission" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#993800] to-[#250e00]"> */}

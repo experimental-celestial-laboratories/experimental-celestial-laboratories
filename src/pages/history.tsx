@@ -30,8 +30,8 @@ export default function History() {
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-1 md:gap-8">
                 <PageContentBox title="History of XCL">
                   <p>
-                    XCL started in Hri7566's igloo in 2023. Since then, we have
-                    become one of the biggest annoyances in SwitchCraft 3
+                    XCL started in Hri7566&apos;s igloo in 2023. Since then, we
+                    have become one of the biggest annoyances in SwitchCraft 3
                     history.
                   </p>
                 </PageContentBox>
