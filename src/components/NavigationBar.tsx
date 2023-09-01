@@ -5,6 +5,7 @@ export const NavigationBar = () => {
     <div className="flex">
       <NavigationLink href="/" text="Home" />
       <NavigationLink href="/about" text="Our Mission" />
+      <NavigationLink href="/team" text="Our Team" />
     </div>
   );
 };

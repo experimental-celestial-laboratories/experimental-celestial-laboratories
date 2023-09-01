@@ -6,7 +6,7 @@ export const PageContentBox = (
   } & PropsWithChildren
 ) => {
   return (
-    <div className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white shadow-lg backdrop-blur-sm">
+    <div className="flex flex-col gap-4 rounded-xl bg-white/10 p-4 text-white shadow-lg backdrop-blur-sm">
       {props.title ? (
         <h3 className="text-2xl font-bold">{props.title}</h3>
       ) : (
