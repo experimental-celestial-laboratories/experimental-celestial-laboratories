@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { PropsWithChildren, useState } from "react";
 
 export const LinkButton = (
   props: {
