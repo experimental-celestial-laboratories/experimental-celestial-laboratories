@@ -1,5 +1,3 @@
-import Link from "next/link";
-import { Logo } from "../components/Logo";
 import { NavigationBar } from "../components/NavigationBar";
 import { PageContentBox } from "~/components/PageContentBox";
 import { CornerLogo } from "~/components/CornerLogo";
