@@ -2,14 +2,13 @@ import Link from "next/link";
 import { Logo } from "../components/Logo";
 import { NavigationBar } from "../components/NavigationBar";
 import { PageContentBox } from "~/components/PageContentBox";
+import { CornerLogo } from "~/components/CornerLogo";
 
 export default function About() {
   return (
     <div className="bg-black/60">
       <div className="flex min-h-screen flex-col items-center justify-center bg-orange-800/40">
-        <Link className="absolute left-0 top-0" href="/">
-          <Logo />
-        </Link>
+        <CornerLogo />
         <div className="absolute right-0 top-0">
           <NavigationBar />
         </div>
