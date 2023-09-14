@@ -13,7 +13,7 @@ export default function Home() {
       <Head>
         <title>XCL</title>
         <meta name="description" content="XCL homepage" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
       {/* <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#993800] to-[#250e00]"> */}
       <main className="bg-[url(/bg.png)] bg-cover bg-center">
@@ -26,8 +26,8 @@ export default function Home() {
               <Logo />
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-1 md:gap-8">
                 <LinkButton
-                  href="https://github.com/experimental-celestial-laboratories"
-                  title="GitHub →"
+                  href="https://git.hri7566.info/xcl"
+                  title="Git →"
                   text="Learn more about XCL."
                 />
               </div>
