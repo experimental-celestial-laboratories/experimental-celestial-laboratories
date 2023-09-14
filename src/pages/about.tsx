@@ -17,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#993800] to-[#250e00]"> */}
-      <main className="bg-[url(/bg.png)] bg-cover bg-center">
+      <main className="bg-[url(/bg/bg_day.png)] bg-cover bg-center">
         <div className="bg-black/60">
           <div className="flex min-h-screen flex-col items-center justify-center bg-orange-800/40">
             <Link className="absolute left-0 top-0" href="/">

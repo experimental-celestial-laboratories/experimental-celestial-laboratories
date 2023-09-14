@@ -8,6 +8,20 @@ import { LinkButton } from "../components/LinkButton";
 import { NavigationBar } from "../components/NavigationBar";
 
 export default function Home() {
+  const bgs = [
+    "/bg/webp/bg1.webp",
+    "/bg/webp/bg2.webp",
+    "/bg/webp/bg3.webp",
+    "/bg/webp/bg4.webp",
+    "/bg/webp/bg5.webp",
+    "/bg/webp/bg6.webp",
+    "/bg/webp/bg7.webp",
+    "/bg/webp/bg8.webp",
+    "/bg/webp/bg9.webp",
+  ];
+
+  const randomBg = bgs[Math.floor(Math.random() * bgs.length)] as string;
+
   return (
     <>
       <Head>
@@ -16,7 +30,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.svg" />
       </Head>
       {/* <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#993800] to-[#250e00]"> */}
-      <main className="bg-[url(/bg.png)] bg-cover bg-center">
+      <main
+        className="bg-cover bg-center"
+        style={{ backgroundImage: `url("${randomBg}")` }}
+      >
         <div className="bg-black/60">
           <div className="flex min-h-screen flex-col items-center justify-center bg-orange-800/40">
             <div className="absolute right-0 top-0">
