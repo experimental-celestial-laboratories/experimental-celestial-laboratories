@@ -13,16 +13,7 @@ export default function About() {
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-1 md:gap-8">
             <PageContentBox title="Our Mission">
-              We love screwing people over apparently. What do we even do? We
-              fight in DMs over stupid shit that should&apos;ve been done in
-              fucking July. Now we&apos;re screwed.
-            </PageContentBox>
-
-            <PageContentBox title="Our Problem">
-              Here at XCL, we do absolutely nothing with our assets and bankrupt
-              people we buy. Sorry about Femcorp. Emma fucking hates us now and
-              I can&apos;t keep Khorne&apos;s mouth shut. Sorry about the mess.
-              It&apos;s going to take forever to clean.
+              We're not very good at this. We'll try to exist, let's just hope some psycho bitch doesn't screw it up this time.
             </PageContentBox>
           </div>
           <div className="flex flex-col items-center gap-2"></div>
