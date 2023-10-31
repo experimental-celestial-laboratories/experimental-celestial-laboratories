@@ -13,7 +13,7 @@ export default function About() {
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-1 md:gap-8">
             <PageContentBox title="Our Mission">
-              We're not very good at this. We'll try to exist, let's just hope some psycho bitch doesn't screw it up this time.
+              We&apos;re not very good at this. We&apos;ll try to exist, let&apos;s just hope some psycho bitch doesn&apos;t screw it up this time.
             </PageContentBox>
           </div>
           <div className="flex flex-col items-center gap-2"></div>
