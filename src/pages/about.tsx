@@ -13,7 +13,13 @@ export default function About() {
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-1 md:gap-8">
             <PageContentBox title="Our Mission">
-              We&apos;re not very good at this. We&apos;ll try to exist, let&apos;s just hope some psycho bitch doesn&apos;t screw it up this time.
+              At XCL, we pioneer the convergence of innovation and imagination
+              within SwichCraft. Driven by a passion for technological
+              excellence, we are committed to pushing the boundaries of what is
+              achievable with the given technologies of SwitchCraft. Our
+              dedicated team of experts harnesses the power of creativity to
+              deliver cutting-edge solutions tailored to the unique needs of our
+              clients.
             </PageContentBox>
           </div>
           <div className="flex flex-col items-center gap-2"></div>
