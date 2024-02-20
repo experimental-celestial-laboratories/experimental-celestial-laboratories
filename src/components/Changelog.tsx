@@ -24,8 +24,8 @@ export const Changelog = () => {
       .then((res) => {
         res
           .json()
-          .then((j) => {
-            setEntries((j as any).logs as LogEntry[]);
+          .then((j: { logs: LogEntry[] }) => {
+            setEntries(j.logs);
             setLoaded(true);
           })
           .catch((err) => console.error(err));
