@@ -1,12 +1,19 @@
 import { useEffect, useState } from "react";
 import { EmployeeDescription } from "~/components/EmployeeDescription";
 
+interface IEmployee {
+  id: number;
+  displayName: string;
+  position: string;
+  tokenContainerId: number;
+}
+
 export const EmployeeList = () => {
-  const [employees, setEmployees] = useState({} as Record<string, string>);
+  const [employees, setEmployees] = useState([] as IEmployee[]);
   const [loaded, setLoaded] = useState(false);
 
   const getEmployees = () => {
-    fetch("https://xnl.hri7566.info/employment/", {
+    fetch("https://xnl.hri7566.info/api/employment", {
       next: {
         revalidate: 60,
       },
@@ -14,10 +21,16 @@ export const EmployeeList = () => {
       .then((res) => {
         res
           .json()
-          .then((j) => {
-            setEmployees(j as Record<string, string>);
-            setLoaded(true);
-          })
+          .then(
+            (j: {
+              type: "employment";
+              count: number;
+              employees: IEmployee[];
+            }) => {
+              setEmployees(j.employees);
+              setLoaded(true);
+            }
+          )
           .catch((err) => console.error(err));
       })
       .catch((err) => console.error(err));
@@ -31,13 +44,13 @@ export const EmployeeList = () => {
     <>
       {/* <EmployeeDescription name="Test" position="test" /> */}
       {loaded ? (
-        Object.keys(employees)
+        employees
           .sort()
-          .map((k) => (
+          .map((e) => (
             <EmployeeDescription
-              name={k}
-              position={employees[k] || "<no position>"}
-              key={Object.keys(employees).indexOf(k)}
+              name={e.displayName}
+              position={e.position || "<no position>"}
+              key={e.id}
             />
           ))
       ) : (
