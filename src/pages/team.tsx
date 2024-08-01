@@ -1,6 +1,6 @@
-import { NavigationBar } from "~/components/NavigationBar";
+import { NavigationBar } from "~/components/nav/NavigationBar";
 import { PageContentBox } from "~/components/PageContentBox";
-import { EmployeeList } from "~/components/EmployeeList";
+import { EmployeeList } from "~/components/employee/EmployeeList";
 import { CornerLogo } from "~/components/CornerLogo";
 
 export default function Team() {

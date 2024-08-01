@@ -1,4 +1,4 @@
-import { NavigationBar } from "../components/NavigationBar";
+import { NavigationBar } from "../components/nav/NavigationBar";
 import { PageContentBox } from "~/components/PageContentBox";
 import { CornerLogo } from "~/components/CornerLogo";
 

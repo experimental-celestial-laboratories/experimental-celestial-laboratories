@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { EmployeeDescription } from "~/components/EmployeeDescription";
+import { EmployeeDescription } from "./EmployeeDescription";
 
 interface IEmployee {
   id: number;
