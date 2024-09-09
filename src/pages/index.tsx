@@ -17,13 +17,11 @@ export default function Home() {
               title="Git →"
               text="Learn more about XCL's projects."
             />
-            {/*
             <LinkButton
               href="https://xnl.hri7566.info"
               title="XNL →"
               text="Our most boundary-pushing effort."
             />
-            */}
           </div>
           <div className="flex flex-col items-center gap-2"></div>
         </div>

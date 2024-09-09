@@ -1,6 +1,12 @@
 import Head from "next/head";
 
-export default function Layout({ title, children }: { title?: string; children: React.ReactNode }) {
+export default function Layout({
+  title,
+  children,
+}: {
+  title?: string;
+  children: React.ReactNode;
+}) {
   const bgs = [
     "/bg/webp/bg1.webp",
     "/bg/webp/bg2.webp",
@@ -18,7 +24,7 @@ export default function Layout({ title, children }: { title?: string; children: 
   return (
     <>
       <Head>
-        <title>XCL{title ? ` - ${title}` : ""}</title>
+        <title>{title ? `XCL - ${title}` : "XCL"}</title>
         <meta name="description" content="XCL homepage" />
         <link rel="icon" href="/favicon.svg" />
       </Head>
